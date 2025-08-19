@@ -22,7 +22,7 @@ namespace Presentacion
         {
             InitializeComponent();
             this.Padding = new Padding(borderSize); // Establece el relleno del formulario
-            this.BackColor = Color.FromArgb(98,102,244); // Color de fondo del formulario
+            this.BackColor = Color.FromArgb(98, 102, 244); // Color de fondo del formulario
         }
 
         //Drag Form
@@ -195,6 +195,12 @@ namespace Presentacion
         private void btnMenu_Click(object sender, EventArgs e)
         {
             CollapseMenu();
+        }
+
+        private void btnCerrarSecion_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("¿Está seguro de que desea cerrar sesión?", "Cerrar sesión", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+                this.Close(); //Close the current form
         }
     }
 }

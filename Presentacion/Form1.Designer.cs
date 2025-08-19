@@ -30,7 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panelMenu = new System.Windows.Forms.Panel();
-            this.button4 = new System.Windows.Forms.Button();
+            this.btnCerrarSecion = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.panel_Logo = new System.Windows.Forms.Panel();
@@ -50,7 +50,7 @@
             // panelMenu
             // 
             this.panelMenu.BackColor = System.Drawing.Color.SlateBlue;
-            this.panelMenu.Controls.Add(this.button4);
+            this.panelMenu.Controls.Add(this.btnCerrarSecion);
             this.panelMenu.Controls.Add(this.button2);
             this.panelMenu.Controls.Add(this.button1);
             this.panelMenu.Controls.Add(this.panel_Logo);
@@ -61,22 +61,23 @@
             this.panelMenu.Size = new System.Drawing.Size(230, 494);
             this.panelMenu.TabIndex = 0;
             // 
-            // button4
+            // btnCerrarSecion
             // 
-            this.button4.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Verdana", 10F);
-            this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.Location = new System.Drawing.Point(0, 433);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(230, 46);
-            this.button4.TabIndex = 8;
-            this.button4.Tag = "      button4";
-            this.button4.Text = "      button4";
-            this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.UseVisualStyleBackColor = true;
+            this.btnCerrarSecion.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.btnCerrarSecion.FlatAppearance.BorderSize = 0;
+            this.btnCerrarSecion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCerrarSecion.Font = new System.Drawing.Font("Verdana", 10F);
+            this.btnCerrarSecion.ForeColor = System.Drawing.Color.White;
+            this.btnCerrarSecion.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCerrarSecion.Location = new System.Drawing.Point(0, 433);
+            this.btnCerrarSecion.Name = "btnCerrarSecion";
+            this.btnCerrarSecion.Size = new System.Drawing.Size(230, 46);
+            this.btnCerrarSecion.TabIndex = 8;
+            this.btnCerrarSecion.Tag = "      button4";
+            this.btnCerrarSecion.Text = "      Cerrar secion";
+            this.btnCerrarSecion.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCerrarSecion.UseVisualStyleBackColor = true;
+            this.btnCerrarSecion.Click += new System.EventHandler(this.btnCerrarSecion_Click);
             // 
             // button2
             // 
@@ -246,7 +247,7 @@
         private System.Windows.Forms.Panel panel_Logo;
         private System.Windows.Forms.PictureBox pictureBox1;
         private FontAwesome.Sharp.IconButton btnMenu;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button btnCerrarSecion;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
         private FontAwesome.Sharp.IconButton btnCerrar;
