@@ -122,14 +122,30 @@
     <Compile Include="LOGIN.Designer.cs">
       <DependentUpon>LOGIN.cs</DependentUpon>
     </Compile>
+    <Compile Include="Marcador de Estadisticas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Marcador de Estadisticas.Designer.cs">
+      <DependentUpon>Marcador de Estadisticas.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <None Include="Resources\16096534681582799504-24.png" />
+    <None Include="Resources\5940745211586787873-24.png" />
+    <None Include="Resources\png_x721p.png" />
+    <None Include="Resources\png_g32wz.png" />
+    <None Include="Resources\18404466911582779196-20 %281%29.png" />
+    <None Include="Resources\png_movuk.png" />
+    <None Include="Resources\18404466911582779196-20.png" />
     <None Include="Resources\Assembly_16x1.png" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LOGIN.resx">
       <DependentUpon>LOGIN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Marcador de Estadisticas.resx">
+      <DependentUpon>Marcador de Estadisticas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panelDecoracion = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.txtUsuario = new System.Windows.Forms.TextBox();
             this.txtContraseña = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -37,7 +38,6 @@
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.btnCerrar = new System.Windows.Forms.Button();
             this.btnMinimizar = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lblMensajeDeError = new System.Windows.Forms.Label();
             this.panelDecoracion.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -53,6 +53,18 @@
             this.panelDecoracion.Size = new System.Drawing.Size(250, 330);
             this.panelDecoracion.TabIndex = 0;
             this.panelDecoracion.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelDecoracion_MouseDown);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Presentacion.Properties.Resources.LogoEjemplo;
+            this.pictureBox1.Location = new System.Drawing.Point(30, 54);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(182, 199);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.pictureBox1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox1_MouseDown);
             // 
             // txtUsuario
             // 
@@ -85,22 +97,22 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Verdana", 13F);
+            this.label1.Font = new System.Drawing.Font("Verdana", 12F);
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(258, 38);
+            this.label1.Location = new System.Drawing.Point(256, 41);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(510, 26);
+            this.label1.Size = new System.Drawing.Size(466, 25);
             this.label1.TabIndex = 3;
             this.label1.Text = "Sistema de gestión de encuentros deportivos";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Verdana", 13F);
+            this.label2.Font = new System.Drawing.Font("Verdana", 12F);
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(353, 72);
+            this.label2.Location = new System.Drawing.Point(334, 77);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(342, 26);
+            this.label2.Size = new System.Drawing.Size(313, 25);
             this.label2.TabIndex = 3;
             this.label2.Text = "Liga de basketball ULSA 2025";
             // 
@@ -159,17 +171,6 @@
             this.btnMinimizar.Text = "-";
             this.btnMinimizar.UseVisualStyleBackColor = true;
             this.btnMinimizar.Click += new System.EventHandler(this.btnMinimizar_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Presentacion.Properties.Resources.LogoEjemplo;
-            this.pictureBox1.Location = new System.Drawing.Point(30, 54);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(182, 199);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // lblMensajeDeError
             // 

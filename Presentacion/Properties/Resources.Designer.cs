@@ -63,6 +63,46 @@ namespace Presentacion.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _16096534681582799504_24 {
+            get {
+                object obj = ResourceManager.GetObject("16096534681582799504-24", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _18404466911582779196_20 {
+            get {
+                object obj = ResourceManager.GetObject("18404466911582779196-20", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _18404466911582779196_20__1_ {
+            get {
+                object obj = ResourceManager.GetObject("18404466911582779196-20 (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _5940745211586787873_24 {
+            get {
+                object obj = ResourceManager.GetObject("5940745211586787873-24", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Assembly_16x {
             get {
                 object obj = ResourceManager.GetObject("Assembly_16x", resourceCulture);
@@ -76,6 +116,36 @@ namespace Presentacion.Properties {
         internal static System.Drawing.Bitmap LogoEjemplo {
             get {
                 object obj = ResourceManager.GetObject("LogoEjemplo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap png_g32wz {
+            get {
+                object obj = ResourceManager.GetObject("png_g32wz", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap png_movuk {
+            get {
+                object obj = ResourceManager.GetObject("png_movuk", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap png_x721p {
+            get {
+                object obj = ResourceManager.GetObject("png_x721p", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

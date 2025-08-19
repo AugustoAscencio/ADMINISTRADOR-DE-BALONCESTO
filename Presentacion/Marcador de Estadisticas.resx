@@ -117,32 +117,4 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="Assembly_16x" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Assembly_16x1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="png_movuk" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\png_movuk.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="5940745211586787873-24" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\5940745211586787873-24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="18404466911582779196-20" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\18404466911582779196-20.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="png_g32wz" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\png_g32wz.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="png_x721p" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\png_x721p.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="18404466911582779196-20 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\18404466911582779196-20 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="LogoEjemplo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\LogoEjemplo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="16096534681582799504-24" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\16096534681582799504-24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
 </root>

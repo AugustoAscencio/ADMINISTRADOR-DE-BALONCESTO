@@ -104,6 +104,7 @@ namespace Presentacion
                     {
                         Form1 form = new Form1();
                         form.Show();
+                        form.FormClosed += Logout;
                         this.Hide();
                     }
                     else
@@ -126,6 +127,21 @@ namespace Presentacion
         {
             lblMensajeDeError.Text = "    " + msg;
             lblMensajeDeError.Visible = true;
+        }
+        private void Logout(object sender,FormClosedEventArgs e)
+        {
+            txtContraseña.Clear();
+            txtUsuario.Clear();
+            lblMensajeDeError.Visible = false;
+            this.Show();
+            txtUsuario.Focus();
+
+        }
+
+        private void pictureBox1_MouseDown(object sender, MouseEventArgs e)
+        {
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
     }
 }

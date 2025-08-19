@@ -22,7 +22,7 @@ namespace Presentacion
         {
             InitializeComponent();
             this.Padding = new Padding(borderSize); // Establece el relleno del formulario
-            this.BackColor = Color.FromArgb(98,102,244); // Color de fondo del formulario
+            this.BackColor = Color.FromArgb(98, 102, 244); // Color de fondo del formulario
         }
 
         //Drag Form
@@ -139,9 +139,9 @@ namespace Presentacion
                     break;
             }
         }
-        private void CollapseMenu()
+        /*private void CollapseMenu()
         {
-            if (this.panelMenu.Width > 200) //Collapse  menu
+            if (this.panelMenu.Width > 150) //Collapse  menu
             {
                 panelMenu.Width = 100;
                 pictureBox1.Visible = false;
@@ -165,7 +165,39 @@ namespace Presentacion
                     menuButton.Padding = new Padding(10, 0, 0, 0);
                 }
             }
+        }*/
+        private void CollapseMenu()
+        {
+            if (this.panelMenu.Width > 150) //Collapse menu
+            {
+                panelMenu.Width = 100;
+                pictureBox1.Visible = false;
+                btnMenu.Dock = DockStyle.Top; // 👈 Se acopla arriba en modo colapsado
+
+                foreach (Button menuButton in panelMenu.Controls.OfType<Button>())
+                {
+                    menuButton.Text = "";
+                    menuButton.ImageAlign = ContentAlignment.MiddleCenter;
+                    menuButton.Padding = new Padding(0);
+                }
+            }
+            else
+            { //Expand menu
+                panelMenu.Width = 230;
+                pictureBox1.Visible = true;
+                btnMenu.Dock = DockStyle.None;
+                btnMenu.Location = new Point(187, 12); // 👈 Posicion original
+
+                foreach (Button menuButton in panelMenu.Controls.OfType<Button>())
+                {
+                    menuButton.Text = "   " + menuButton.Tag.ToString();
+                    menuButton.ImageAlign = ContentAlignment.MiddleLeft;
+                    menuButton.Padding = new Padding(10, 0, 0, 0);
+                }
+            }
         }
+
+
 
         private void btnMinimizar_Click(object sender, EventArgs e)
         {
@@ -196,5 +228,45 @@ namespace Presentacion
         {
             CollapseMenu();
         }
+
+        private void btnCerrarSecion_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("¿Está seguro de que desea cerrar sesión?", "Cerrar sesión", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+                this.Close(); //Close the current form
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void abrirformHija(object formHija)
+        {
+            // Limpiar el panel antes de abrir otro form
+            if (this.panel_principal.Controls.Count > 0)
+                this.panel_principal.Controls.RemoveAt(0);
+
+            Form fh = formHija as Form;
+            fh.TopLevel = false;
+            fh.Dock = DockStyle.Fill;
+            this.panel_principal.Controls.Add(fh);
+            this.panel_principal.Tag = fh;
+            fh.Show();
+        }
+
+        private void btnMarcador_Click(object sender, EventArgs e)
+        {
+            abrirformHija(new Marcador_de_Estadisticas());
+        }
+        private void button2_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            //abrirformHija(new Marcador_de_Estadisticas());
+        }
+
+        
     }
 }
